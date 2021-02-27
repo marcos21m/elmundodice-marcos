@@ -1,0 +1,273 @@
+body {
+    font-family: $parrafos-font-family;
+    background-color: #f4f0f0;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+trix-editor {
+    height: auto!important;
+    min-height: 400px;
+    background-color: white;
+}
+
+.bg-primary .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-family: $font-family-sans-serif;
+    font-size: 5px;
+    font-family: 'Fredoka One', cursive;
+    color: #fcfcfc!important;
+    font-size: 30px;
+    text-decoration: none;
+    &:hover {
+        color: white;
+    }
+}
+.icono {
+    width: 16px;
+}
+.barra {
+    background-color: #ED4646!important
+}
+.fecha {
+    color: #ED4646 !important
+}
+.receta-meta p {
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+.navbar-light  {
+    .navbar-nav {
+        .nav-link{
+            color: #FFF;
+            font-size: 15px;
+                &:focus,
+                &:hover {
+                    color: #FFF;
+            }
+        }
+    }
+}
+
+.titulo-categoria {
+    font-family: 'Cabin', sans-serif;
+    color: rgb(20, 20, 20);
+    font-size: 20px;
+    /*border-bottom: 1px solid #ED4646 !important;*/
+    display: inline-block;
+    padding-bottom: .4rem;
+    padding-top: .4rem;
+    padding-right: .3rem;
+    width: 100%;
+    text-transform: initial;
+    text-align: center;
+    background-color: #ffab95;
+}
+.btn-receta,
+.btn-receta:hover {
+    background-color: #ED4646 !important;
+    border: none;
+}
+/*Carusel e imagen */
+.owl-carousel .owl-stage { 
+    display: flex; 
+    height: 420px;
+}
+.card-img-top{
+    max-height: 180px;
+}
+
+/* fin de carusel e imagen*/
+
+.card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card-body {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.categorias-bg {
+    background-color: rgb(255, 255, 255) ;
+    .nav-link {
+        color: rgb(15, 15, 15)!important;
+        display: inline-block;
+        padding-top: .2rem;
+        padding-bottom: .1rem;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        font-size: 15px!important;
+        text-transform: initial;
+        font-weight: bold;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            transition: transform .5s ease;
+        }
+        &:before {
+          left: 0;
+          bottom: 0;
+          width: 90%;
+          height: 2px;
+          background: #ED4646;
+          transform:  translateX(-100%);
+        }
+        &:hover:before {
+          transform:  translateX(0);
+        }
+
+}
+}
+
+/* Botones de Trix */
+.trix-button-row{
+    .trix-button-group--text-tools{
+    padding: 1px;
+    width: 75px;
+    font-size: 17px;
+    background-color: white;
+    display: inline-flex;
+    }
+    
+    .trix-button-group--block-tools{
+    padding: 1px;
+    width: 150px;
+    font-size: 16px;
+    background-color: white;
+    justify-self: start;
+    }
+
+    .trix-button-group--history-tools{
+    padding: 1px;
+    width: 50px;
+    font-size: 16px;
+    background-color: white;
+    justify-content: left;
+    }
+    .trix-button-group--file-tools{
+    padding: 1px;
+    width: 25px;
+    font-size: 16px;
+    background-color: white;
+    justify-self: start;
+    display: none;
+    }
+}
+
+// eliminar el boton de insertar codigo iframe <>
+trix-toolbar .trix-button--icon-code {
+    display: none;
+}
+
+.icono-ver-perfil, .icono-editar-perfil, .icono-crear-receta, .icono-administrar {
+    
+    width: 23px;
+}
+
+.icono-ver-receta, .icono-editar-receta {
+    max-width: 38px;
+}
+.hero-categorias-1 {
+    background-image: linear-gradient(to bottom, rgba(70, 70, 70, 0.4), rgba(53, 53, 53, 0.571)), 
+    url('/images/pizza.jpg');
+    height:13rem;
+    background-size: cover;
+    background-position: top center;
+    .texto-buscar {
+        p {
+            font-size: 1.4rem;
+            color: #FFF;
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        background-image: linear-gradient(to bottom, rgba(70, 70, 70, 0.4), rgba(53, 53, 53, 0.571)), 
+        url('/images/pizza.jpg');
+        height:9rem;
+        background-size: cover;
+        background-position: top center;
+        .texto-buscar {
+            p {
+                font-size: 1.2rem;
+                color: #FFF;
+            } 
+        } 
+    }   
+}
+.navbar-light .navbar-toggler {
+    color: rgb(0, 0, 0);
+}
+
+.imagen-receta{
+    max-width: 600px;
+    max-height: 450px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1.2em;
+}
+
+th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid rgb(85, 85, 85);
+    border-collapse: collapse;
+    padding: 0.4em;
+    margin-left: 0.4em;    
+ }
+
+
+.share .whatsapp {
+    background: #1b9a59;
+    color: ivory;
+}
+.share .whatsapp:hover {
+    color: #1b9a59;
+    background: transparent;
+    border: 1px dashed #018101cb;
+}
+
+.share .facebook {
+    background: #365899;
+    color: ivory;
+}
+.share .facebook:hover {
+    color:  #3232b4;
+    background: transparent;
+    border: 1px dashed #050599;
+}
+
+#scrollUp{
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #E91E63; /* Color de fondo */
+	padding: 3px 3px; /* Relleno del boton */
+	bottom: 30px;
+    right: 50px;
+    width: 25px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+
+.footer{
+    background-color: rgb(245, 94, 94);
+    height: 100%;   
+}
+
+
+
+

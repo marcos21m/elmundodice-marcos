@@ -1,0 +1,16 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Archivo de recetas con estilos propios
+@import 'recetas';
+
+// Archivo de estilos icono de corazon Like
+@import 'likes';
+
+@import 'biografia';
